@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddy Bank</title>
+  <!--<link rel="stylesheet" href="style.css">-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    df-messenger {
+     --df-messenger-bot-message: #878fac;
+     --df-messenger-button-titlebar-color: #df9b56;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon: #878fac;
+     --df-messenger-user-message: #479b3d;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="min-h-screen
+  bg-[url('images/bg1.png')]
+  bg-center
+  bg-cover w-screen px-28 py-5">
+    <nav class="flex items-center justify-between">
+        <img src="images/BankBuddy_ai_logo.png" class="w-96 cursor-pointer">
+<!--        <div class="font-sans md:font-serif text-6xl text-amber-950">Capstone Project</div>-->
+        <ul>            
+            <li class="list-none inline-block px-5"><a href="#" class="no-underline px-2 text-white">Home</a></li>
+            <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">FeaturesContact</a></li>
+            <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a></li>
+            <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
+        </ul>
+        <img src="images/cart.png" class="w-10 cursor-pointer">
+    </nav>
+
+    <div class="font-sans md:font-serif text-5xl text-amber-950  mt-3">Capstone Project</div>
+
+    <div class="text-amber-950 mt-2 max-w-2xl">
+      <h1 class="text-3xl font-semibold leading-normal text-amber-800">Chatbot using <span class="font-light">DialogFlow!</span></h1>
+      <h3 class="text-2xl font-semibold leading-normal text-amber-700 mt-0 mb-0">PGCP DSML B#7</h3>
+      <h2 class="text-2xl font-semibold leading-normal text-amber-700 mb-2">Problem Statement:</h2>
+      
+      <p class="mb-1 text-amber-950">Financial institutions must engage with their customers and members in the right way, and at the right place and time. A good integration of chatbots as part of the engagement process can provide consumers with quick and personalized interactions, using machine learning and artificial intelligence as a foundation.</p>
+      <p class="mb-2 text-amber-950 mt-2">Objective of this project to develop a Dialogflow based chatbot  to mimic the conversations regarding opening a bank account. The chatbot must pointed in the right direction where they can find relevant information, the engagement is more likely to result in a new account opening.</p>
+    </div>
+
+    <div>
+        <div class="max-w-sm bg-white rounded-xl md:max-w-2xl overflow-hidden md:mx-w-2xl">
+            <div class="md:flex">
+                <div>
+                    <img class="h-48 w-full object-cover md:h-full md:w-39" src="images/100.jpeg" alt="" srcset="">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Rakesh Kumar Pandey</div>
+                    <a class="block mt-1 text-lg font-medium text-black hover:text-blue-500" href="#">PGCP DSML B#7</a>
+                    <p class="mt-2 text-slate-500">I would like to express my gratitude to <b>Prof. Millie Pant</b> (Professor, Department of Applied Science and Engineering), <b>Prof. Sanjeev Kumar Malik</b> (Associate Professor, Department of Mathematics) and <b>Prof. Alok Bhardwaj</b> (Assistant Professor, Department of Civil Engineering)</p>
+                    <p><span class="bg-yellow-500 p-[1px] px-[14px]">... IIT Roorkee</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="iFinBot"
+  agent-id="672847c4-90f0-4a34-9e54-ebcc3dd9f6d6"
+  language-code="en"
+></df-messenger>
+</body>
+</html>
